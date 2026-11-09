@@ -1,0 +1,168 @@
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffafb;
+    color: #4a4a4a;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/* Tipografia */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #d4a373;
+}
+
+/* Capa */
+.hero {
+    height: 100vh;
+
+    /* COLOQUE O LINK DA FOTO DE CAPA AQUI */
+    background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("https://cdnstatic.tencentcs.com/edgeone/pages/assets/1794259114725-11ky.png") center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Seções */
+.section {
+    padding: 100px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.section.reverse .container {
+    flex-direction: row-reverse;
+}
+
+/* Imagens */
+.image-box {
+    flex: 1;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.05);
+    transition: transform 0.4s ease;
+}
+
+.image-box img:hover {
+    transform: translateY(-10px);
+}
+
+/* Textos */
+.text-box {
+    flex: 1.2;
+}
+
+.text-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.text-box p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Citação */
+.quote-banner {
+    background-color: #fce4ec;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.quote-banner blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #880e4f;
+}
+
+/* Mensagem Final */
+.final-msg {
+    padding: 120px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.container-small {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.signature {
+    margin-top: 50px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #d4a373;
+}
+
+/* Rodapé */
+footer {
+    padding: 40px;
+    text-align: center;
+    background: #f8f9fa;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Responsividade */
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .text-box p {
+        text-align: center;
+    }
+
+    .text-box h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+}
